@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "./auth";
 
 function Profile() {
+  console.log("Profile Component");
   const auth = useAuth();
   const navigate = useNavigate();
   const handleLogout = () => {
@@ -12,7 +13,7 @@ function Profile() {
 
   return (
     <>
-      <div>Welcom {auth.user}</div>
+      <div>Welcome {auth.user}</div>
       <button onClick={handleLogout}>Logout</button>
     </>
   );

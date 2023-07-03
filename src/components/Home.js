@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
+  console.log("Home Component");
   const navigate = useNavigate();
   return (
     <>
